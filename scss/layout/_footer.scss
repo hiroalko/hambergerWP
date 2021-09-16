@@ -1,0 +1,36 @@
+// .l-footerのクラス名　ヘッダーやフッターなど大枠のレイアウトに関する定義。装飾はなく枠だけを用意しているイメージ。
+
+.l-footer{
+  width: 100%;
+  height: 150px;
+  background-color: #9D8670;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__section{
+      padding-top: 43px;
+      a{
+          color: #fff;
+          font-size: 20px;
+          padding: 43px 10px;
+          &:last-of-type{
+              position: relative;
+              &::before{
+                  position: absolute;
+                  left: -3px;
+                  content: "";
+                  background-color: #fff;
+                  width: 2px;
+                  height: 20px;
+              }
+          }
+      }
+  }
+  p{
+      padding-top: 39px;
+      small{
+      color: #fff;
+      font-size: 14px;
+      }
+  }
+}

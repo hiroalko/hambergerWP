@@ -1,0 +1,42 @@
+// header,footer,.l-が頭文字にくる
+
+
+.l-wrapper{
+  display: flex;
+}
+
+// .box__header{
+//   flex: 1;
+// }
+
+.l-header{
+  width: 100%;
+  
+}
+.l-description{
+  width: 75%;
+  @include tab{
+    width: 100%;
+  }
+  @include sp{
+    width: 100%;
+  }
+}
+
+
+
+  
+
+ 
+
+  
+  
+  
+  
+  
+
+  
+  
+
+
+  

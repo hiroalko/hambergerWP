@@ -1,0 +1,407 @@
+img{
+  width: 100%;
+  height: auto;
+}
+h2{
+  font-size: 5rem;
+  font-weight: bold;
+  
+}
+
+
+.main {
+  justify-content: space-between;
+  padding: 24px;
+  // ３５pxから変更
+}
+.l-main__title__front{
+  height: 530px;
+  background-image: url(../img/front-header.png);
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  @include sp{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 86px;
+    @include sp{
+      margin-left: 25px;
+    }
+}}
+
+.l-main__title{
+  height: 239px;
+  width: 82vw;
+  background-image: url(../img/archive-img.png);
+  display: flex;
+  align-items: center}
+
+.l-main__img-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+ 
+  @include sp{
+    padding: 20px;
+    display: inline-block;
+  }
+  .l-main__img__left{
+    background-image: url(../img/front-main1.png);
+    width: 42%;
+    margin-right: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+   
+    h2::after {
+      content: "";
+      display: block;
+      background: #ffff;
+      height: 8px;
+      width: 60px;
+      margin-top: 3%;
+      @include tab{
+        height: 5px;
+        width: 50px;
+      }
+      @include sp{
+        width: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+      }
+    }
+    
+    @include sp{
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding: 0;
+    }
+  }
+  .title{
+    color: #ffffff;
+    @include tab{
+      font-size: 2.7rem;
+    }
+    @include sp{
+      font-size: 2.75rem;
+      white-space: nowrap;
+      margin: 20px 0 0 13px;
+    }
+  }
+  .l-main__img__right{
+    background-image: url(../img/front-main2.png);
+    width: 42%;
+    margin-left: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    h2::after {
+      content: "";
+      display: block;
+      background: #ffff;
+      height: 8px;
+      width: 60px;
+      margin-top: 3%;
+      @include tab{
+        height: 5px;
+        width: 50px;
+      }
+      
+    }
+   
+    @include sp{
+      width: 100%;
+      margin-top: 20px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding: 0;
+    }
+  }
+}
+
+
+.l-main__maps {
+  top: 0px;
+  position: relative;
+ 
+}
+
+.l-main__block {
+  background-color: #707070;
+  width: 61%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 6%;
+  top: 1px;
+  opacity: 0.7;
+  @include tab{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  @include sp{
+    padding:  40px 40px 51px 40px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+// ここからarchiveです
+
+.l-main__title{
+  height: 239px;
+  width: 82vw;
+  background-image: url(../img/archive-img.png);
+  @include tab{
+    width: 100vw;
+  }
+  @include sp{
+    width: 100%;
+  }
+  
+  
+ 
+  
+}
+.l-main__content{
+  margin: 0 100px;
+  @include tab{
+    margin: 0 30px;
+  }
+  @include sp{
+    margin: 30px 20px 30px 20px;
+  }
+  &__title{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 60px;
+    @include sp{
+      font-size: 1.75rem;
+      margin-top: 30px;
+     
+    }
+  }
+  &__text{
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    @include sp{
+      margin: 30px 18px 19px 36px;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+
+
+
+
+.menu__content{
+  display: flex;
+  margin-top: 30px;
+  @include sp{
+   flex-direction: column;
+   margin-top: 21px ;
+  }
+}
+ .menu__content__img{
+   width: 50%;
+   box-sizing: border-box;
+   @include sp{
+     width: 85%;
+   }
+  img{
+      height: 100%;
+      object-fit: cover;
+      @include sp{
+      margin-left: 38px;
+    }
+  }
+ }
+//  &__img sass効かない
+ 
+
+.menu__content__text{
+  background-color: #3C2B1C;
+  padding-left: 33px;
+  padding-right: 45px;
+  width: 50%;
+  box-sizing: border-box;
+  @include sp{
+    padding-left: 22px;
+    width: 85%;
+    margin-left: 38px;
+ }
+  h3{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 53px;
+    @include sp{
+      font-size: 1.25rem;
+    }
+    
+  }
+  h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 47px;
+    @include sp{
+      font-size: 1rem;
+    }
+  }
+  p{
+    font-size: 1rem;
+    color: white;
+    margin-top: 17px;
+    margin-bottom: 60px;
+    padding-right: 5px;
+    line-height: 1.4;
+  }
+  a{
+    text-decoration: none;
+    display: block;
+    border-radius: 40px;
+    padding: 16px 20px;
+    margin-bottom: 60px;
+    color: #707070;
+    background-color: white;
+    box-sizing: border-box;
+    width: 44%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    left: 70px;
+    @include tab{
+      display: block;
+      border-radius: 26px;
+      width: 99%;
+      left: 4%;
+      text-align: center;
+    }
+    @include sp{
+      width: 71%;
+      text-align: center;
+      margin-bottom: 10%;
+      margin-left: 15%;
+    }
+  }
+}
+
+
+.this{
+  border: 0px none;
+}
+
+
+// ここからsingle-pageです
+
+.l-main__single__title{
+  background-image: url(../img/single-header.png);
+  width: 88vw;
+  height: 490px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  @include tab{
+    width: 100%;
+  }
+  @include sp{
+    width: 100%;
+  }
+  h1{
+    font-size: 3.7rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 85px;
+    @include sp{
+      font-size: 2.25rem;
+     margin-left: 25px;
+    }
+  }
+}
+.l-main__content__single{
+  margin: 0 30px;
+  @include sp{
+    margin: 0 20px;
+  }
+}
+
+
+
+
+
+table{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 60px; 
+ td, th{
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}}
+
+.table__th{
+  width: 30%;
+  padding: 8px;
+  text-align: left;
+}
+
+.table__td1{
+  width: 70%;
+  padding: 8px;
+}
+
+// .table__td{
+//   width: 30%;
+// }
+
+// .table__td1{
+//   width: 70%;
+// }
+
+
+// インライン要素だから直接button(css)にかく必要がある
+
+
+
+
+
+// ここからpageです
+
+.l-main__page__title{
+  background-image: url(/img/page-header.png);
+  height: 490px;
+  display: flex;
+  align-items: center;
+  h1{
+    font-size: 3.7rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 86px;
+    @include sp{
+      margin-left: 25px;
+      font-size: 2.25rem;
+    }
+  }
+}

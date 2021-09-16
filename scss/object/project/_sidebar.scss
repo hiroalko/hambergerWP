@@ -1,0 +1,44 @@
+.p-sidebar__title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-left: 46px;
+    margin-top: 82px;
+    color: #707070;
+    @include tab{
+      display: none;
+    } 
+    @include sp{
+      display: none;
+    }
+  }
+  
+  .p-sidebar__category{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 85px;
+    a{
+      text-decoration: none;
+      color: #707070;
+      margin-left: 46px;
+    }
+    }
+    .p-sidebar__list{
+      margin-top: 37px;
+    }
+  
+  
+  .p-sidebar__menu {
+    font-size: 1.2rem;
+    margin-top: 23px;
+    line-height: 1.45;
+    a{
+      text-decoration: none;
+      color: #707070;
+      margin-left: 66px;
+    }
+  }
+  
+  .p-sidebar__menu__menu {
+    padding-top: 37px;
+  }
+  

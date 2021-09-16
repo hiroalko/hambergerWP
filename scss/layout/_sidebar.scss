@@ -1,0 +1,60 @@
+.l-sidebar {
+  background-color: #F2EDE9;
+  width: 25%;
+  @include tab{
+    display: none;
+    &.active{
+      display: block;
+      width: 100vw;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 60%;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+      
+    }
+  }
+  @include sp{
+    display: none;
+    &.active{
+      display: block;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 10%;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
+  }
+  
+}
+
+.l-sidebar__overlay{
+  display: none;
+  @include tab{
+    &.active{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background: #000000;
+  }}
+      
+}
+
+
+// .l-sideber__single{
+//   background-color: #F2EDE9;
+//   width: 100%;
+//   @include sp{
+//     display: none;
+//   }
+// }

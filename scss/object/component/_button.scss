@@ -1,0 +1,19 @@
+// .c-buttonのクラス名　再利用できる最小限のパーツどの案件にも使えます
+.c-site__btn button{
+      width: 30%;
+      padding: 0;
+      border-radius: 20px;
+      margin-bottom: 60px;
+
+    a{
+      text-decoration: none;
+      color: #3C2A10;
+      display: block;
+      padding: 52px 0;
+      border-radius: 20px;
+      
+    }
+    @include sp{
+      width: 100%;
+    }
+  }

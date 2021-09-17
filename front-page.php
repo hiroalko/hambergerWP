@@ -7,7 +7,7 @@
     </div>
     <div class="l-main__img-box">
         <div class="l-main__img__left main">
-            <h2 class="title"><a href="<?php the_permalink(); ?>"></a>Take Out</h2>
+            <h2 class="title"><a href="<?php the_permalink(); ?>">Take Out</a></h2>
             <div class=" p-box">
                 <div class="p-box__take-out">
                     <h4>小見出しが入ります</h4>

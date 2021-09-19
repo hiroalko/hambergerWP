@@ -3,7 +3,12 @@
     <div class="l-main__title">
         <h3 class="p-main__subtitle">
             Menu:<br>
-            <span>チーズバーガー</span>
+            <?php
+            $cat = get_the_category();
+            $cat = $cat[0];
+            echo $cat->cat_name;
+            ?>
+            <!-- カテゴリーを出力させる↑ -->
         </h3>
     </div>
     <!-- カテゴリーメニュー名を出力させる -->
@@ -11,40 +16,29 @@
         <div class="l-main__content__title">小見出しが入ります</div>
         <p class="l-main__content__text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         <ul class="l-main__content--menu">
-            <li class="menu__content">
-                <div class="menu__content__img">
-                    <img src="/img/archive-main.png" alt="#">
-                </div>
-                <div class="menu__content__text">
-                    <h3>チーズバーガー</h3>
-                    <h4>小見出しが入ります</h4>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <a href="#">詳しく見る</a>
-                </div>
-            </li>
-            <!-- これの記事が自動的に出力させるようにするループ処理！！！！ -->
-            <li class="menu__content">
-                <div class="menu__content__img">
-                    <img src="/img/archive-main.png" alt="#">
-                </div>
-                <div class="menu__content__text">
-                    <h3>ダブルチーズバーガー</h3>
-                    <h4>小見出しが入ります</h4>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <a href="#">詳しく見る</a>
-                </div>
-            </li>
-            <li class="menu__content">
-                <div class="menu__content__img">
-                    <img src="/img/archive-main.png" alt="#">
-                </div>
-                <div class="menu__content__text">
-                    <h3>スペシャルチーズバーガー</h3>
-                    <h4>小見出しが入ります</h4>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <a href="#">詳しく見る</a>
-                </div>
-            </li>
+            <?php
+            if (have_posts()) :
+                while (have_posts()) : the_post();
+            ?>
+
+                    <li class="menu__content">
+                        <div class="menu__content__img">
+                            <img src="/img/archive-main.png" alt="#">
+                        </div>
+                        <div class="menu__content__text">
+                            <h3><?php the_title(); ?></h3>
+                            <h4>小見出しが入ります</h4>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <a href="<?php the_permalink(); ?>">詳しく見る</a>
+                        </div>
+
+                    </li>
+
+            <?php
+                endwhile;
+            endif;
+            ?>
+
         </ul>
         <div class="p-pagenation">
             <ul>

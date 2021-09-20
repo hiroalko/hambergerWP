@@ -2,13 +2,16 @@
 <main class="l-main">
     <div class="l-main__title">
         <h3 class="p-main__subtitle">
-            Menu:<br>
             <?php
             $cat = get_the_category();
+            // $catという箱(変数）にget_the_category();を入れている作業
+            // var_dump($cat);
             $cat = $cat[0];
-            echo $cat->cat_name;
+            // 0番目を上書き保存
             ?>
-            <!-- カテゴリーを出力させる↑ -->
+            Menu:<br>
+            <span><?php echo $cat->cat_name; ?></span>
+            <!-- // 箱に入れた変数の名前を出力している -->
         </h3>
     </div>
     <!-- カテゴリーメニュー名を出力させる -->
@@ -18,12 +21,15 @@
         <ul class="l-main__content--menu">
             <?php
             if (have_posts()) :
+                // もし投稿があれば
                 while (have_posts()) : the_post();
+                    // 繰り返しますよ the_postで投稿を出している
             ?>
 
                     <li class="menu__content">
                         <div class="menu__content__img">
-                            <img src="/img/archive-main.png" alt="#">
+                            <!-- <img src="/img/archive-main.png" alt="#"> -->
+                            <?php the_post_thumbnail(); ?>
                         </div>
                         <div class="menu__content__text">
                             <h3><?php the_title(); ?></h3>

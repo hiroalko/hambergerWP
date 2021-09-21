@@ -1,10 +1,18 @@
 <?php get_header(); ?>
 <main class="l-main">
     <div class="l-main__single__title">
-        <h1>チーズバーガー</h1>
+        <h1><?php the_title(); ?></h1>
     </div>
     <div class="l-main__content__single">
-        <div class="p-article">
+        <div class="l-main__content__single">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <?php the_content(); ?>
+                <?php endwhile;
+            else : ?>
+                <p>記事がありません</p>
+            <?php endif; ?>
+        </div>
+        <!-- <div class="p-article">
             <h2 class="p-article__title">見出し</h2>
             <p>pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。
             </p>
@@ -87,14 +95,14 @@
     &lt;/body&gt;
 &lt;/html&gt;</code>
                     </pre>
-        <div class="c-site__table">
-            <!-- クラス名を思いつかない -->
-            <table>
+        <div class="c-site__table"> -->
+        <!-- クラス名を思いつかない -->
+        <!-- <table>
                 <tr>
                     <th class="table__th">テーブル</th>
                     <th class="table__th1">テーブル</th>
                     <!-- なぜ文字が真ん中による？？ -->
-                </tr>
+        <!-- </tr>
                 <tr>
                     <td class="table__td">テーブル</td>
                     <td class="table__td1">テーブル</td>
@@ -111,9 +119,9 @@
 
         <p class="c-site__bold">boldboldboldboldboldbold</p>
     </div>
-</main>
-</div>
-<?php get_sidebar(); ?>
-</div>
-<!--headerからmain,sidberまでのdivのくくりの終了タグです-->
-<?php get_footer(); ?>
+</main> --> -->
+    </div>
+    <?php get_sidebar(); ?>
+    </div>
+    <!--headerからmain,sidberまでのdivのくくりの終了タグです-->
+    <?php get_footer(); ?>

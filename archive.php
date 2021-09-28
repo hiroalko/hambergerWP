@@ -46,22 +46,7 @@
             ?>
 
         </ul>
-        <div class="p-pagenation">
-            <ul>
-                <li>page 1/10</li>
-                <li class="this">&lt;&lt;</li>
-                <li><a href="/html/archive.html">1</a></li>
-                <li><a href="/html/archive.html">2</a></li>
-                <li><a href="/html/archive.html">3</a></li>
-                <li><a href="/html/archive.html">4</a></li>
-                <li><a href="/html/archive.html">5</a></li>
-                <li><a href="/html/archive.html">6</a></li>
-                <li><a href="/html/archive.html">7</a></li>
-                <li><a href="/html/archive.html">8</a></li>
-                <li><a href="/html/archive.html">9</a></li>
-                <li class="this">&gt;&gt;</li>
-            </ul>
-        </div>
+        <?php wp_pagenavi(); ?>
         <div class="p-pagenation__pc">
             <ul>
                 <li class="pre">&lt;&lt;前へ</li>

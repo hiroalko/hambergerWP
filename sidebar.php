@@ -3,30 +3,25 @@
     <span class="batsu"></span>
     <h2 class="p-sidebar__title">Menu</h2>
     <?php
-    $categories = get_categories();
-    foreach ($categories as $category) :
-    ?>
-        <!-- ↑全てのカテゴリを取得 -->
-        <p class="p-sidebar__category"><a href="<?php echo esc_url(get_category_link($category->term_id)); ?>"><?php echo $category->name; ?></a></p>
-        <!-- ↑リンク付きで取得 -->
-        <?php
-        $my_query = new WP_Query(
-            array(
-                'cat' => $category->term_id,
-                'posts_per_page' => -1,
-            )
+    // 引数に指定したメニューの位置にメニューが設定してある場合。引数にはregister_nav_menus()で登録したスラッグ名を指定
+    if (has_nav_menu('side')) {
+        // メニューの設定を配列で指定
+        $args = array(
+            // 表示させるメニューを、register_nav_menus()で登録したスラッグ名で指定。初期値はなし
+            'theme_location' => 'side',
+            // ul要素を囲むかどうか。使えるタグはdiv、nav。囲まない場合はfalseを指定。初期値はdiv
+            'container' => false,
+            // メニューのリンク前に表示するテキスト。初期値はなし
+            'link_before' => '<span>',
+            // メニューのリンク後に表示するテキスト。初期値はなし
+            'link_after' => '</span>',
+            // メニュー項目を囲むタグ。囲むタグをなしにする場合でも、パラメータを指定し %3$s の記述が必須
+            'items_wrap' => '<ul>%3$s</ul>'
         );
-        if ($my_query->have_posts()) :
-        ?>
-            <ul class="p-sidebar__list">
-                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                    <li class="p-sidebar__menu"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                <?php endwhile; ?>
-            </ul>
-            <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-            <p>投稿はありません。</p>
-        <?php endif; ?>
-    <?php endforeach; ?>
+        // メニューを表示
+        wp_nav_menu($args);
+    };
+    ?>
 </div>
 </div>
+<!-- ↑最後のdivの閉じはflexの関係で崩れるので記載 -->

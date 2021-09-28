@@ -1,6 +1,14 @@
 <?php get_header(); ?>
 <main class="l-main">
-    <div class="l-main__single__title">
+    <?php
+    $title_bg = "style=''";
+    if (has_post_thumbnail()) {
+        $img_url = wp_get_attachment_url(get_post_thumbnail_id());
+        // アイキャッチ画像のurlを取得するテンプレタグ
+        $title_bg = "style='background-image:url(" . $img_url . ");'";
+    }
+    ?>
+    <div class="l-main__single__title" <?php echo $title_bg ?>>
         <h1><?php single_post_title(); ?></h1>
     </div>
     <div class="l-main__content__single p-main-content-single">

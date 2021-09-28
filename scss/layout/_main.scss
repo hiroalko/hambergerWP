@@ -97,6 +97,10 @@ p{
       white-space: nowrap;
       margin: 20px 0 0 13px;
     }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
   }
   .l-main__img__right{
     background-image: url(../img/front-main2.png);

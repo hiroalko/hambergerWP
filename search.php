@@ -23,7 +23,8 @@
                         </div>
                         <div class="menu__content__text">
                             <h3><?php the_title(); ?></h3>
-                            <?php the_excerpt(); ?>
+
+
                             <a href="<?php the_permalink(); ?>">詳しく見る</a>
                         </div>
                     </li>

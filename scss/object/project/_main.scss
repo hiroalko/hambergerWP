@@ -54,6 +54,8 @@
     margin-bottom: 60px;
     @include sp{
       display: none;
+    }a{
+      color: inherit;
     }
     li{
       display: inline;
@@ -185,22 +187,27 @@
       blockquote{
         padding-top: 50px;
       }
-      .size-large{
-        margin-top: 60px;
-        text-align: center;
-        margin-right: 25px;
-        @include tab{
-          margin-top: 1%;
-        }
-      }
+     
       .wp-block-media-text{
         margin-top: 60px;
+      }
+      .w-600{
+        width: 470px;
+        margin: 0 auto;
       }
       .wp-block-image{
         // width: 50%;
         @include sp{
           height: 89px;
           width: 45%;
+        }
+        .size-large,.size-full{
+          margin-top: 60px;
+          text-align: center;
+          margin-right: 25px;
+          @include tab{
+            margin-top: 1%;
+          }
         }
       }
       .wp-block-gallery{
@@ -212,13 +219,16 @@
       ol {
           margin-top: 60px;
         ol{
+          margin-bottom: 60px;
           text-indent: 1rem;
         }
       }
+      
       ul{
-        margin-top: 60px;
+          margin-top: 60px;
         ul{
           text-indent: 1rem;
+          margin-bottom: 60px;
           
         }
       }

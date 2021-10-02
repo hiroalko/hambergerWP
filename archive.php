@@ -3,10 +3,10 @@
     <div class="l-main__title">
         <h3 class="p-main__subtitle">
             <?php
-            $cat = get_the_category();
+            $cat = get_category($cat);
             // $catという箱(変数）にget_the_category();を入れている作業
             // var_dump($cat);
-            $cat = $cat[0];
+            // $cat = $cat[0];
             // 0番目を上書き保存
             ?>
             Menu:<br>

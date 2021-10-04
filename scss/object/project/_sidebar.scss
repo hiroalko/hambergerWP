@@ -2,7 +2,8 @@
     font-size: 2.1rem;
     font-weight: bold;
     margin-left: 46px;
-    margin-top: 82px;
+    margin-top: 42px;
+    margin-bottom: 85px;
     color: #707070;
     @include tab{
       display: none;
@@ -15,7 +16,7 @@
   .p-sidebar__category{
     font-size: 24px;
     font-weight: bold;
-    margin-top: 85px;
+    margin-bottom: 37px;
     a{
       text-decoration: none;
       color: #707070;
@@ -43,25 +44,32 @@
   }
   
   // sidebar-wp
+.menu{
+
 
   .menu-item{
     font-size: 2.1rem;
-    font-weight: bold;
     margin-left: 27px;
-    margin-top: 82px;
+    margin-top: 23px;
     color: #707070;
-    @include tab{
-      display: none;
-    } 
-    @include sp{
-      display: none;
-    }
+    
+   
     a{
       font-size: 24px;
-      font-weight: bold;
       margin-top: 85px;
       text-decoration: none;
       color: #707070;
       margin-left: 46px;
     }
+    
   }
+  >.menu-item >a{
+    font-weight: bold;
+  }
+}
+
+.sub-menu{
+  span{
+    font-size: 1.25rem;
+  }
+}

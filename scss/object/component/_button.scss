@@ -17,3 +17,17 @@
       width: 100%;
     }
   }
+
+  .wp-block-button__link{
+    width: 30%;
+    padding: 0;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    a{
+      text-decoration: none;
+      color: #3C2A10;
+      display: block;
+      padding: 52px 0;
+      border-radius: 20px;
+    }
+  }

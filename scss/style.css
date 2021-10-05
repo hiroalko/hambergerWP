@@ -447,7 +447,6 @@ h2 {
 
 @media (max-width: 1200px) {
   .menu__content__text a {
-    display: block;
     border-radius: 26px;
     width: 99%;
     left: 4%;

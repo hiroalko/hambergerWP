@@ -680,21 +680,34 @@ h2 {
 }
 
 .wp-block-button__link {
-  width: 30%;
+  padding: 0;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  background-color: #F2EDE9;
+}
+
+.wp-block-buttons {
+  width: 100%;
   padding: 0;
   border-radius: 20px;
   margin-bottom: 60px;
 }
 
-.wp-block-button__link a {
+.wp-block-buttons a {
   text-decoration: none;
   color: #3C2A10;
   display: block;
-  padding: 52px 0;
+  padding: 56px 190px;
   border-radius: 20px;
 }
 
 .c-site__bold {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 179px;
+}
+
+strong {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 179px;
@@ -708,6 +721,12 @@ h2 {
 .c-site__code code {
   font-size: 1rem;
   font-weight: normal;
+}
+
+.wp-block-code {
+  background-color: #F5F5F5;
+  margin-top: 60px;
+  padding: 50px 69px 50px 50px;
 }
 
 .p-header {
@@ -1152,15 +1171,16 @@ h2 {
   }
 }
 
-.p-main-content-single .p-article__blockquote {
+.p-main-content-single blockquote {
   margin: 60px 0;
   padding: 32px;
   background-color: #F5F5F5;
   line-height: 1.5;
 }
 
-.p-main-content-single blockquote {
-  padding-top: 50px;
+.p-main-content-single blockquote p {
+  padding-bottom: 60px;
+  margin-top: 0px;
 }
 
 .p-main-content-single .wp-block-media-text {
@@ -1181,6 +1201,7 @@ h2 {
 
 .p-main-content-single .wp-block-image .size-large, .p-main-content-single .wp-block-image .size-full {
   margin-top: 60px;
+  padding-top: 60px;
   text-align: center;
   margin-right: 25px;
 }
@@ -1217,11 +1238,6 @@ h2 {
   margin-bottom: 60px;
 }
 
-.p-main-content-single .wp-block-code {
-  background-color: #F5F5F5;
-  margin-top: 60px;
-}
-
 .p-main-content-single table {
   margin-top: 60px;
 }
@@ -1236,25 +1252,6 @@ h2 {
 
 .p-main-content-single table td:nth-of-type(2) {
   width: 70%;
-}
-
-.p-main-content-single .wp-block-buttons {
-  width: 100%;
-  padding: 0;
-  border-radius: 20px;
-  margin-bottom: 60px;
-}
-
-.p-main-content-single .wp-block-buttons a {
-  text-decoration: none;
-  color: #3C2A10;
-  display: block;
-  padding: 52px 0;
-  border-radius: 20px;
-}
-
-:root .has-cyan-bluish-gray-background-color {
-  background-color: #F2EDE9;
 }
 
 .p-article {

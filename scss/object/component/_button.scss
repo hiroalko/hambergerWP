@@ -19,7 +19,14 @@
   }
 
   .wp-block-button__link{
-    width: 30%;
+    padding: 0;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    background-color: #F2EDE9;
+    
+  }
+  .wp-block-buttons{
+    width: 100%;
     padding: 0;
     border-radius: 20px;
     margin-bottom: 60px;
@@ -27,7 +34,8 @@
       text-decoration: none;
       color: #3C2A10;
       display: block;
-      padding: 52px 0;
+      padding: 56px 190px;
       border-radius: 20px;
     }
+   
   }

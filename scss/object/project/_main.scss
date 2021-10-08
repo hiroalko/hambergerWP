@@ -187,14 +187,16 @@
         margin-left: 20px;
       }
 
-    .p-article__blockquote{
+    
+      blockquote{
         margin: 60px 0;
         padding: 32px;
         background-color: #F5F5F5;
         line-height: 1.5;
-      }
-      blockquote{
-        padding-top: 50px;
+        p{
+          padding-bottom: 60px;
+          margin-top: 0px;
+        }
       }
      
       .wp-block-media-text{
@@ -212,6 +214,7 @@
         }
         .size-large,.size-full{
           margin-top: 60px;
+          padding-top: 60px;
           text-align: center;
           margin-right: 25px;
           @include tab{
@@ -241,10 +244,7 @@
           
         }
       }
-      .wp-block-code{
-        background-color: #F5F5F5;
-        margin-top: 60px;
-      }
+      
       table {
         margin-top: 60px;
         td{
@@ -257,24 +257,10 @@
           width: 70%;
         }
       }
-      .wp-block-buttons{
-        width: 100%;
-        padding: 0;
-        border-radius: 20px;
-        margin-bottom: 60px;
-        a{
-          text-decoration: none;
-          color: #3C2A10;
-          display: block;
-          padding: 52px 0;
-          border-radius: 20px;
-        }
-      }
+      
     }
     
-    :root .has-cyan-bluish-gray-background-color{
-      background-color: #F2EDE9;
-    }
+    
 
       
     

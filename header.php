@@ -9,13 +9,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/scss/style.css"> -->
+
     <title>hamburgersite</title>
     <?php wp_head(); ?>
     <!-- // WordPressのテーマに含める関数。 -->
 </head>
 
 <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <div class="l-wrapper">
         <div class="l-description">
             <header class="l-header">

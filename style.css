@@ -1,12 +1,14 @@
 /*
-  Theme Name:hambergarsite    
+  Theme Name:hambergarsitewp  
   Description:ハンバーガーのサイト    //テーマの説明
   Version:1.0        //バージョン
   Theme URI:      //テーマの URL
-  Author: ishimaru hiroaki        //作った人の名前
+  Author:ishimaru hiroaki       
   Author URI:     //作った人の URL
   Tags:           //テーマのタイプ
-  License:        //ライセンス（WordPressのテーマやプラグインを公開して配布する場合、ライセンスはGPLになります。）
-  License URI:    //ライセンスの URL
-  Text Domain:    //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
+  License:GPLv2 or later
+  License:URI:http://www.gnu.org/licenses/gpl-2.0.html
+  Text Domain:hambergarsitewp
+  Tested up to:5.8.1
+  Requires PHP:8.0.0
 */

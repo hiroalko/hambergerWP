@@ -11,9 +11,11 @@
     <div class="l-main__single__title" <?php echo $title_bg ?>>
         <h1><?php single_post_title(); ?></h1>
     </div>
-    <div class="l-main__content__single p-main-content-single">
+    <div id="post-<?php the_ID(); ?>" <?php post_class(array('l-main__content__single', 'p-main-content-single')); ?>>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <?php the_content(); ?>
+                <!-- <?php wp_link_pages($args); ?> -->
+                <!-- この箇所どうするか？？ -->
             <?php endwhile;
         else : ?>
             <p>記事がありません</p>

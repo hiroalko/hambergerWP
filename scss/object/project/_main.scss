@@ -139,6 +139,9 @@
   //single-wp//
   .p-main-content-single{
     padding-left: 24px;
+    @include sp{
+      padding-left: 0px;
+    }
     h2{
       font-size: 2.2rem;
       font-weight: bold;
@@ -197,8 +200,16 @@
           padding-bottom: 60px;
           margin-top: 0px;
         }
+        cite{
+          font-size: 1rem;
+        }
       }
-     
+      ol li,ul li{
+        font-size: 1.62rem;
+        @include sp{
+          font-size: 1.4rem;
+        }
+      }
       .wp-block-media-text{
         margin-top: 60px;
       }
@@ -209,8 +220,9 @@
       .wp-block-image{
         // width: 50%;
         @include sp{
-          height: 89px;
-          width: 45%;
+          // height: 89px;
+          // width: 45%;
+          width: 100%;
         }
         .size-large,.size-full{
           margin-top: 60px;
@@ -248,14 +260,15 @@
       table {
         margin-top: 60px;
         td{
-          border: solid 1px; 
+          border: solid 1px;
+          @include sp{
+            font-size: 1.2rem;
+          }
         }
-        td:nth-of-type(1){
-          width: 30%;
-        }
-        td:nth-of-type(2){
-          width: 70%;
-        }
+        
+        // td:nth-of-type(2){
+        //   width: 70%;
+        // }
       }
       
     }
@@ -287,6 +300,7 @@
           line-height: 1.3rem;
         
       }
+    
       .p-article__title__top{
         margin-top: 60px;
         font-size: 1.7rem;

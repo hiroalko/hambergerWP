@@ -36,6 +36,9 @@
       display: block;
       padding: 56px 190px;
       border-radius: 20px;
+      @include sp{
+        padding: 56px 69px;
+      }
     }
    
   }

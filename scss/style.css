@@ -34,7 +34,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'M PLUS 1p','Noto Sans JP', sans-serif;
+  font-size: 62.5%;
 }
 
 ol, ul {
@@ -701,6 +702,12 @@ h2 {
   border-radius: 20px;
 }
 
+@media (max-width: 599px) {
+  .wp-block-buttons a {
+    padding: 56px 69px;
+  }
+}
+
 strong {
   font-size: 1rem;
   font-weight: bold;
@@ -718,9 +725,16 @@ strong {
 }
 
 .wp-block-code {
+  font-size: 1rem;
   background-color: #F5F5F5;
   margin-top: 60px;
   padding: 50px 69px 50px 50px;
+}
+
+@media (max-width: 599px) {
+  .wp-block-code {
+    font-size: 1.2rem;
+  }
 }
 
 .p-header {
@@ -1097,6 +1111,12 @@ strong {
   padding-left: 24px;
 }
 
+@media (max-width: 599px) {
+  .p-main-content-single {
+    padding-left: 0px;
+  }
+}
+
 .p-main-content-single h2 {
   font-size: 2.2rem;
   font-weight: bold;
@@ -1177,6 +1197,20 @@ strong {
   margin-top: 0px;
 }
 
+.p-main-content-single blockquote cite {
+  font-size: 1rem;
+}
+
+.p-main-content-single ol li, .p-main-content-single ul li {
+  font-size: 1.62rem;
+}
+
+@media (max-width: 599px) {
+  .p-main-content-single ol li, .p-main-content-single ul li {
+    font-size: 1.4rem;
+  }
+}
+
 .p-main-content-single .wp-block-media-text {
   margin-top: 60px;
 }
@@ -1188,8 +1222,7 @@ strong {
 
 @media (max-width: 599px) {
   .p-main-content-single .wp-block-image {
-    height: 89px;
-    width: 45%;
+    width: 100%;
   }
 }
 
@@ -1240,12 +1273,10 @@ strong {
   border: solid 1px;
 }
 
-.p-main-content-single table td:nth-of-type(1) {
-  width: 30%;
-}
-
-.p-main-content-single table td:nth-of-type(2) {
-  width: 70%;
+@media (max-width: 599px) {
+  .p-main-content-single table td {
+    font-size: 1.2rem;
+  }
 }
 
 .p-article {

@@ -1,6 +1,7 @@
 .l-sidebar {
   background-color: #F2EDE9;
   width: 25%;
+  padding-bottom: 100px;
   @include tab{
     display: none;
     &.active{

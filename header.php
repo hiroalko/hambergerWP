@@ -30,5 +30,4 @@
                     <h2 class="p-header__sp-title">Menu</h2>
                     <?php get_search_form(); ?>
                 </div>
-
             </header>

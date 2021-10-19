@@ -23,6 +23,9 @@
     border-radius: 20px;
     margin-bottom: 60px;
     background-color: #F2EDE9;
+    @include sp{
+      margin-bottom: 30px;
+    }
     
   }
   .wp-block-buttons{
@@ -37,7 +40,7 @@
       padding: 56px 190px;
       border-radius: 20px;
       @include sp{
-        padding: 56px 69px;
+        padding: 40px 100px;
       }
     }
    

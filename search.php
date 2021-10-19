@@ -23,8 +23,8 @@
                         </div>
                         <div class="menu__content__text">
                             <h3><?php the_title(); ?></h3>
-
-
+                            <h4>小見出しが入ります</h4>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                             <a href="<?php the_permalink(); ?>">詳しく見る</a>
                         </div>
                     </li>
@@ -36,16 +36,33 @@
 
 
         </ul>
-
+        <?php wp_pagenavi(); ?>
         <div class="p-pagenation__pc">
+            <?php
+            $prev = get_previous_posts_link();
+            $next = get_next_posts_link();
+            ?>
             <ul>
-                <li class="pre">&lt;&lt;前へ</li>
-                <li class="pre1">次へ&gt;&gt;</li>
+                <?php
+                if ($prev) {
+                    // 前のページが存在する場合
+                ?>
+                    <li class="pre"> <?php echo $prev; ?></li>
+                <?php
+                }
+                ?>
+                <?php
+                if ($next) {
+                    // 次のページが存在する場合
+                ?>
+                    <li class="next"> <?php echo $next; ?></li>
+                <?php
+                }
+                ?>
             </ul>
         </div>
     </div>
 </main>
 </div>
 <?php get_sidebar(); ?>
-</div>
 <?php get_footer(); ?>

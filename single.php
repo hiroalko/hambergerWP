@@ -25,6 +25,4 @@
 </main>
 </div>
 <?php get_sidebar(); ?>
-</div>
-<!--headerからmain,sidberまでのdivのくくりの終了タグです-->
 <?php get_footer(); ?>

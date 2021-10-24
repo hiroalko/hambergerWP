@@ -19,17 +19,27 @@
     }}
     &__take-out{
      background-color: white;
-     padding: 10px;
+     margin-right: 12px;
+     padding: 10px 20px 10px 20px;
      margin-bottom: 15px;
      opacity: 0.7;
+     @include sp{
+       margin-right: 0;
+       padding: 10px 20px 10px 20px;
+     }
    }
    &__take-out h4{
      font-size: 1.5rem;
      font-weight: bold;
-     margin-bottom: 30px;;
+     margin-bottom: 26px;
+     margin-top: 17px;
+     @include tab{
+       margin-bottom: 20px;
+       margin-top: 20px;
+     }
    }
    &__take-out p{
-     line-height: 1.3;
+     line-height: 2.3;
    }}
    
    .p-main__heading {
@@ -51,36 +61,7 @@
       line-height: 1.8;
     }
   }
-  .p-maps__layer1{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(#000000, 0.3);
-    z-index: 10;
-    @include tab{
-        width: 0;
-    }
-    @include sp{
-        width: 100%;
-         height: 100%;
-    }
-  }
-.p-maps__layer2{
-  position: absolute;
-  top: 0;
-  width: 55%;
-  height: 100%;
-  background-color: rgba(#000, 0.5);
-  z-index: 5;
-  @include tab{
-      width: 100%;
-      background-color: rgba(#000, 0.6);
-  }
-  @include sp{
-      height: 50%;
-  }
-}
+
  
  
   
@@ -203,6 +184,9 @@
         margin: 10px 3px;
         margin-top: 60px;
         line-height: 1.3rem;
+        @include tab{
+          margin: 154px 3px;
+        }
       }
       h3{
         margin-top: 60px;
@@ -245,6 +229,7 @@
         p{
           padding-bottom: 60px;
           margin-top: 0px;
+          line-height: 2.3;
         }
         cite{
           font-size: 1rem;

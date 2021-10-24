@@ -12,6 +12,12 @@
       display: none;
     }
   }
+  .menu{
+    @include tab{
+      margin-top: 210px;
+      margin-bottom: 100px;
+    }
+  }
   
   .p-sidebar__category{
     font-size: 24px;

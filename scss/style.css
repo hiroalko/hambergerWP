@@ -105,6 +105,12 @@ h2 {
   background-size: cover;
 }
 
+@media (min-width: 1650px) {
+  .l-main__title__front {
+    height: 650px;
+  }
+}
+
 @media (max-width: 1200px) {
   .l-main__title__front {
     width: 100%;
@@ -156,6 +162,12 @@ h2 {
 
 @media (max-width: 599px) {
   .l-main__img-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .l-main__img-box {
     display: inline-block;
   }
 }
@@ -176,7 +188,7 @@ h2 {
   background: #ffff;
   height: 8px;
   width: 60px;
-  margin-top: 3%;
+  margin-top: 10%;
 }
 
 @media (max-width: 1200px) {
@@ -242,7 +254,7 @@ h2 {
   background: #ffff;
   height: 8px;
   width: 60px;
-  margin-top: 3%;
+  margin-top: 10%;
 }
 
 @media (max-width: 1200px) {
@@ -692,7 +704,7 @@ h2 {
 }
 
 .l-footer p {
-  padding-top: 39px;
+  padding: 34px 0 30px 0;
 }
 
 .l-footer p small {
@@ -734,7 +746,7 @@ h2 {
 
 @media (max-width: 599px) {
   .wp-block-button__link {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -756,6 +768,7 @@ h2 {
 @media (max-width: 599px) {
   .wp-block-buttons a {
     padding: 40px 100px;
+    font-size: 1rem;
   }
 }
 
@@ -846,6 +859,7 @@ strong {
     right: 18px;
     top: 14px;
     color: #707070;
+    cursor: pointer;
   }
 }
 
@@ -858,6 +872,7 @@ strong {
     top: 14px;
     left: 83%;
     color: #707070;
+    cursor: pointer;
   }
 }
 
@@ -1219,6 +1234,12 @@ strong {
 @media (max-width: 1200px) {
   .p-main-content-single p {
     margin: 154px 3px;
+  }
+}
+
+@media (max-width: 599px) {
+  .p-main-content-single p {
+    margin: 30px 0 70px 0;
   }
 }
 
@@ -1667,5 +1688,17 @@ strong {
 
 .sub-menu span {
   font-size: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  .sub-menu span {
+    font-size: 2.0vw;
+  }
+}
+
+@media (max-width: 599px) {
+  .sub-menu span {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

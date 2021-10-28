@@ -21,7 +21,7 @@ h2{
   align-items: center;
   background-size: cover;
   @include pcwi{
-    height: 650px;
+   background-position: center;
   }
   @include tab{
     width: 100%;

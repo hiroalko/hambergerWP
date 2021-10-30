@@ -12,6 +12,8 @@ h2{
 .main {
   justify-content: space-between;
   padding: 24px;
+  overflow-x: hidden;
+  
   // ３５pxから変更
 }
 .l-main__title__front{
@@ -69,12 +71,20 @@ p{
   }
   .l-main__img__left{
     background-image: url(../img/front-main1.png);
-    width: 42%;
+    width: 625px;
     margin-right: 20px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 681px;
+    height: 1193px;
+    @include tab{
+      width: 45%;
+      height: 681px;
+    }
+    @include sp{
+      width: 42%;
+      height: 642px;
+    }
     h2::after {
       content: "";
       display: block;
@@ -118,12 +128,20 @@ p{
   }
   .l-main__img__right{
     background-image: url(../img/front-main2.png);
-    width: 42%;
+    width: 625px;
     margin-left: 20px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 681px;
+    height: 1193px;
+    @include tab{
+      width: 45%;
+      height: 681px;
+    }
+    @include sp{
+      width: 42%;
+      height: 642px;
+    }
     // @include tab{
     //   height: 642px;
     // }

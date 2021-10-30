@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&display=swap");
 body {
-  overflow-x: hidden;
+  line-height: 1;
+  font-family: 'M PLUS 1p','Noto Sans JP', sans-serif;
+  font-size: 62.5%;
+  width: 100%;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -36,13 +39,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-  font-family: 'M PLUS 1p','Noto Sans JP', sans-serif;
-  font-size: 62.5%;
-  width: 100%;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -64,6 +60,8 @@ table {
 
 .l-wrapper {
   display: flex;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .l-header {
@@ -99,6 +97,7 @@ h2 {
 .main {
   justify-content: space-between;
   padding: 24px;
+  overflow-x: hidden;
 }
 
 .l-main__title__front {
@@ -178,12 +177,26 @@ h2 {
 
 .l-main__img-box .l-main__img__left {
   background-image: url(../img/front-main1.png);
-  width: 42%;
+  width: 625px;
   margin-right: 20px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 681px;
+  height: 1193px;
+}
+
+@media (max-width: 1200px) {
+  .l-main__img-box .l-main__img__left {
+    width: 45%;
+    height: 681px;
+  }
+}
+
+@media (max-width: 599px) {
+  .l-main__img-box .l-main__img__left {
+    width: 42%;
+    height: 642px;
+  }
 }
 
 .l-main__img-box .l-main__img__left h2::after {
@@ -244,12 +257,26 @@ h2 {
 
 .l-main__img-box .l-main__img__right {
   background-image: url(../img/front-main2.png);
-  width: 42%;
+  width: 625px;
   margin-left: 20px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 681px;
+  height: 1193px;
+}
+
+@media (max-width: 1200px) {
+  .l-main__img-box .l-main__img__right {
+    width: 45%;
+    height: 681px;
+  }
+}
+
+@media (max-width: 599px) {
+  .l-main__img-box .l-main__img__right {
+    width: 42%;
+    height: 642px;
+  }
 }
 
 .l-main__img-box .l-main__img__right h2::after {

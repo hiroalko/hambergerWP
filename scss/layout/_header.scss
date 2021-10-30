@@ -3,6 +3,8 @@
 
 .l-wrapper{
   display: flex;
+  overflow-x: hidden;
+  position: relative;
 }
 
 // .box__header{
@@ -11,12 +13,14 @@
 
 .l-header{
   width: 100%;
-  
+
 }
 .l-description{
   width: 75%;
+ 
   @include tab{
     width: 100%;
+  
   }
   @include sp{
     width: 100%;

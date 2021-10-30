@@ -58,10 +58,13 @@ table {
   border-spacing: 0;
 }
 
-.l-wrapper {
-  display: flex;
+.wrapper {
   overflow-x: hidden;
   position: relative;
+}
+
+.l-wrapper {
+  display: flex;
 }
 
 .l-header {
@@ -97,7 +100,6 @@ h2 {
 .main {
   justify-content: space-between;
   padding: 24px;
-  overflow-x: hidden;
 }
 
 .l-main__title__front {

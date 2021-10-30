@@ -19,15 +19,16 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <div class="l-wrapper">
-        <div class="l-description">
-            <header class="l-header">
-                <div class="p-header">
-                    <div class="p-header__title">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?>
-                        </a>
+    <div class="wrapper">
+        <div class="l-wrapper">
+            <div class="l-description">
+                <header class="l-header">
+                    <div class="p-header">
+                        <div class="p-header__title">
+                            <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?>
+                            </a>
+                        </div>
+                        <h2 class="p-header__sp-title">Menu</h2>
+                        <?php get_search_form(); ?>
                     </div>
-                    <h2 class="p-header__sp-title">Menu</h2>
-                    <?php get_search_form(); ?>
-                </div>
-            </header>
+                </header>

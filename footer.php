@@ -14,6 +14,7 @@
         <small>Copyright : RaiseTech</small>
     </p>
 </footer>
+</div>
 <?php wp_footer(); ?>
 </body>
 
